@@ -1,0 +1,20 @@
+.foot{
+    background-color: black;
+    color: white;
+    .foot1{
+        
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            color: #fe3051;
+        }
+    }
+    .foot2{
+        text-align: center;
+        span{
+            color: #fe3051;
+        }
+    }
+}

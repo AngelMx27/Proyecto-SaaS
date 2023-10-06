@@ -1,0 +1,110 @@
+
+.mainIndex{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    background-color: $bg-color;
+    .mainSection{
+        width: 80%;
+        margin: auto;
+    .imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card1{
+            position: relative;
+            width: 200px;
+            height: 250px;
+            border-radius: 14px;
+            z-index: 1111;
+            overflow: hidden;
+            .bg{
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 190px;
+                height: 240px;
+                z-index: 2;
+                backdrop-filter: blur(24px);
+                border-radius: 10px;
+                overflow: hidden;
+                outline: 1px solid black;
+                img{
+                    width: 200px;
+                }          
+            }
+            .blob{
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 50%;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #fe3051;
+                opacity: 1;
+                filter: blur(12px);
+                animation: blob-bounce 1.5s infinite ;
+            }   
+
+            @keyframes blob-bounce {
+                0% {
+                transform: translate(-100%, -100%) translate3d(0, 0, 0);
+                }
+                25% {
+                transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+                }
+                50% {
+                transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+                }
+                75% {
+                transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+                }
+            
+                100% {
+                transform: translate(-100%, -100%) translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+    .seccion2{
+        .main-parrafo{
+            padding: 10px;
+            h2{
+                color: $text-color1;
+                span{
+                    color: $text-color2;
+                }
+            }
+            .par{
+                padding-top: 10px;
+                color: $text-color1;
+                text-align: justify;
+                b{
+                    color: $text-color2;
+                }
+            }
+        }
+        .tipos-estambre{
+            h3{
+                color: white;
+            }
+            .tipo1{
+                padding-top: 20px;
+            }
+            .tipo1,.tipo2{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                & ion-icon{
+                    color: #fe3051;
+                    font-size: 30px;
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,202 @@
+/*PRIMERO VARIABLES, MIXINS Y TODO LO QUE ESTE DENTRO DE UTILITIES*/
+/*TODO LO QUE ESTE EN LA BASE*/
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*TODO LO QUE ESTE EN LAYOUT*/
+.headerIndex {
+  background-color: black;
+}
+.headerIndex nav .nav__menu {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.headerIndex nav .nav__menu h1 {
+  color: #fe3051;
+}
+.headerIndex nav .nav__menu li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.headerIndex nav .nav__menu li a:hover {
+  cursor: pointer;
+  color: #fe3051;
+}
+
+.mainIndex {
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+  background-color: black;
+}
+.mainIndex .mainSection {
+  width: 80%;
+  margin: auto;
+}
+.mainIndex .mainSection .imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainIndex .mainSection .imagen .card1 {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+}
+.mainIndex .mainSection .imagen .card1 .bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+.mainIndex .mainSection .imagen .card1 .bg img {
+  width: 200px;
+}
+.mainIndex .mainSection .imagen .card1 .blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fe3051;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 1.5s infinite;
+}
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+.mainIndex .mainSection .seccion2 .main-parrafo {
+  padding: 10px;
+}
+.mainIndex .mainSection .seccion2 .main-parrafo h2 {
+  color: white;
+}
+.mainIndex .mainSection .seccion2 .main-parrafo h2 span {
+  color: #fe3051;
+}
+.mainIndex .mainSection .seccion2 .main-parrafo .par {
+  padding-top: 10px;
+  color: white;
+  text-align: justify;
+}
+.mainIndex .mainSection .seccion2 .main-parrafo .par b {
+  color: #fe3051;
+}
+.mainIndex .mainSection .seccion2 .tipos-estambre h3 {
+  color: white;
+}
+.mainIndex .mainSection .seccion2 .tipos-estambre .tipo1 {
+  padding-top: 20px;
+}
+.mainIndex .mainSection .seccion2 .tipos-estambre .tipo1, .mainIndex .mainSection .seccion2 .tipos-estambre .tipo2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mainIndex .mainSection .seccion2 .tipos-estambre .tipo1 ion-icon, .mainIndex .mainSection .seccion2 .tipos-estambre .tipo2 ion-icon {
+  color: #fe3051;
+  font-size: 30px;
+}
+.mainIndex .mainSection .seccion2 .tipos-estambre .tipo1 p, .mainIndex .mainSection .seccion2 .tipos-estambre .tipo2 p {
+  color: white;
+}
+
+.foot {
+  background-color: black;
+  color: white;
+}
+.foot .foot1 {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot .foot1 h2 {
+  color: #fe3051;
+}
+.foot .foot2 {
+  text-align: center;
+}
+.foot .foot2 span {
+  color: #fe3051;
+}
+
+.botones {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.botones .tienda {
+  background: #FE3051;
+  cursor: pointer;
+  border: none;
+  padding: 16px;
+  color: black;
+  font-size: 15px;
+  position: relative;
+  border-radius: 15px;
+}
+.botones .tienda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, white, #fe3051, white, red, white, #fe3051, white);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

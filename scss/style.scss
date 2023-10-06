@@ -1,0 +1,13 @@
+/*PRIMERO VARIABLES, MIXINS Y TODO LO QUE ESTE DENTRO DE UTILITIES*/
+@import "./utilities/variables";
+
+/*TODO LO QUE ESTE EN LA BASE*/
+@import "./base/reset";
+
+/*TODO LO QUE ESTE EN LAYOUT*/
+@import "./layout/header";
+@import "./layout/mainIndex";
+@import "./layout/footer";
+
+
+@import "./components/botones"

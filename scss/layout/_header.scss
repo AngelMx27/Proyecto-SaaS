@@ -1,0 +1,29 @@
+
+.headerIndex{
+    background-color: $bg-color;
+    nav{
+        .nav__menu{
+            padding: 10px;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            h1{
+                color: $text-color2;
+            }
+            li{
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $text-color1;
+                    &:hover{
+                        cursor: pointer;
+                        color: $text-color2;
+                    }
+                }
+            }
+        }
+    }
+}

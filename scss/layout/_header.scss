@@ -9,7 +9,17 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 16px;
+
+            @include desktop{
+                padding-top: 1rem;
+                width: 80%;
+                margin: auto;
+                flex-direction: row;
+                
+            }
+
+
             h1{
                 color: $text-color2;
             }

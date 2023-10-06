@@ -1,13 +1,21 @@
 /*PRIMERO VARIABLES, MIXINS Y TODO LO QUE ESTE DENTRO DE UTILITIES*/
 @import "./utilities/variables";
+@import "../scss/layout/medias/mediaOne.scss";
 
 /*TODO LO QUE ESTE EN LA BASE*/
 @import "./base/reset";
+@import "./components/botones";
+@import "./components/cards";
+
 
 /*TODO LO QUE ESTE EN LAYOUT*/
 @import "./layout/header";
 @import "./layout/mainIndex";
 @import "./layout/footer";
+@import "./layout/mainNosotros";
+@import "./layout/mainContactos";
+@import "./layout/mainEstambres";
 
 
-@import "./components/botones"
+
+

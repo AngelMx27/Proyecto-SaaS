@@ -7,6 +7,12 @@
         padding: 10px;
         justify-content: space-between;
         align-items: center;
+
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         h2{
             color: #fe3051;
         }

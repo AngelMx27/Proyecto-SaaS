@@ -1,10 +1,16 @@
 .mainNosotros{
     background-color: black;
-    
+    padding: 50px;
     .nosotros-section{
+        
         color: white;
         margin: auto;
         width: 90%;
+
+        @include desktop{
+            width: 70%;
+        }
+
         h3{
             color:#fe3051;
         }

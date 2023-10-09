@@ -14,10 +14,8 @@
             width: 70%;
         }
     .imagen{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center,center,none);
+     
         .card1{
             position: relative;
             width: 200px;
@@ -93,8 +91,7 @@
             }
         }
         .botones{
-            display: flex;
-            justify-content: center;
+            @include flex(none,center,none,none);
             padding: 40px 0;
         }
         .tipos-estambre{
@@ -105,9 +102,7 @@
                 padding-top: 20px;
             }
             .tipo1,.tipo2{
-                display: flex;
-                align-items: center;
-                gap: 10px;
+                @include flex(none,none,center,10px); 
                 & ion-icon{
                     color: $text-color2;
                     font-size: 30px;

@@ -98,8 +98,8 @@
 }
 .headerIndex nav .nav__menu {
   padding: 10px;
-  display: flex;
   list-style: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -150,6 +150,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: none;
 }
 .mainIndex .mainSection .imagen .card1 {
   position: relative;
@@ -221,7 +222,10 @@
 }
 .mainIndex .mainSection .seccion2 .botones, .mainIndex .mainSection .mainSection .seccion2 .botones {
   display: flex;
+  flex-direction: none;
   justify-content: center;
+  align-items: none;
+  gap: none;
   padding: 40px 0;
 }
 .mainIndex .mainSection .seccion2 .tipos-estambre h3, .mainIndex .mainSection .mainSection .seccion2 .tipos-estambre h3 {
@@ -232,6 +236,8 @@
 }
 .mainIndex .mainSection .seccion2 .tipos-estambre .tipo1, .mainIndex .mainSection .seccion2 .tipos-estambre .tipo2 {
   display: flex;
+  flex-direction: none;
+  justify-content: none;
   align-items: center;
   gap: 10px;
 }
@@ -547,6 +553,8 @@
   text-align: justify;
 }
 .contenedorGaleria .grid-container {
+  margin: auto;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(200px, auto);
@@ -556,8 +564,10 @@
 }
 .contenedorGaleria .grid-container .grid-item {
   display: flex;
-  align-items: center;
+  flex-direction: none;
   justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #03afff;
   border-radius: 4px;
   transition: transform 0.3s ease-in-out;

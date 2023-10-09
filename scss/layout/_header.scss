@@ -4,12 +4,8 @@
     nav{
         .nav__menu{
             padding: 10px;
-            display: flex;
             list-style: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 16px;
+            @include flex(column,center,center,16px);
             a{
                 text-decoration: none;
             }

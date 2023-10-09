@@ -347,6 +347,11 @@
   transform: translateY(-50%);
   right: 15px;
 }
+@media screen and (min-width: 700px) {
+  .mainContactos .container .form .input-box i {
+    font-size: 20px;
+  }
+}
 .mainContactos .container .form .input-box > input {
   width: 100%;
   height: 40px;

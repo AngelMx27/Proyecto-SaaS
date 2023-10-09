@@ -4,6 +4,7 @@
     padding: 50px;
     background-color: $bg-color;
     .mainSection{
+        @extend .mainIndex;
         width: 80%;
         margin: auto;
         padding: 20px;
@@ -34,7 +35,7 @@
                 backdrop-filter: blur(24px);
                 border-radius: 10px;
                 overflow: hidden;
-                outline: 1px solid black;
+                outline: 1px solid $bg-color;
                 img{
                     width: 200px;
                 }          
@@ -47,7 +48,7 @@
                 width: 150px;
                 height: 150px;
                 border-radius: 50%;
-                background-color: #fe3051;
+                background-color: $text-color2;
                 opacity: 1;
                 filter: blur(12px);
                 animation: blob-bounce 1.5s infinite ;
@@ -84,16 +85,21 @@
             }
             .par{
                 
-                color: $text-color1;
+                @extend h2;
                 text-align: justify;
                 b{
                     color: $text-color2;
                 }
             }
         }
+        .botones{
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
         .tipos-estambre{
             h3{
-                color: white;
+                color: $text-color1;
             }
             .tipo1{
                 padding-top: 20px;
@@ -103,11 +109,11 @@
                 align-items: center;
                 gap: 10px;
                 & ion-icon{
-                    color: #fe3051;
+                    color: $text-color2;
                     font-size: 30px;
                 }
                 p{
-                    color: white;
+                    color: $text-color1;
                 }
             }
         }

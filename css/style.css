@@ -11,7 +11,6 @@
 }
 
 .botones {
-  padding: 20px 0;
   display: flex;
   gap: 20px;
 }
@@ -35,7 +34,7 @@
 }
 
 .imagen2 {
-  padding: 20px;
+  padding-inline-start: 20px;
   display: flex;
   justify-content: center;
 }
@@ -106,7 +105,10 @@
   align-items: center;
   gap: 16px;
 }
-@media screen and (min-width: 750px) {
+.headerIndex nav .nav__menu a {
+  text-decoration: none;
+}
+@media screen and (min-width: 700px) {
   .headerIndex nav .nav__menu {
     padding-top: 1rem;
     width: 80%;
@@ -127,7 +129,7 @@
   color: #fe3051;
 }
 
-.mainIndex {
+.mainIndex, .mainIndex .mainSection {
   font-family: "Ubuntu", sans-serif;
   padding: 50px;
   background-color: black;
@@ -138,7 +140,7 @@
   padding: 20px;
   gap: 20px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
   .mainIndex .mainSection {
     width: 70%;
   }
@@ -205,20 +207,24 @@
 .mainIndex .mainSection .seccion2 .main-parrafo {
   padding: 20px;
 }
-.mainIndex .mainSection .seccion2 .main-parrafo h2 {
+.mainIndex .mainSection .seccion2 .main-parrafo h2, .mainIndex .mainSection .seccion2 .main-parrafo .foot .foot2 span, .foot .foot2 .mainIndex .mainSection .seccion2 .main-parrafo span, .mainIndex .mainSection .seccion2 .main-parrafo .par {
   color: white;
 }
-.mainIndex .mainSection .seccion2 .main-parrafo h2 span {
+.mainIndex .mainSection .seccion2 .main-parrafo h2 span, .mainIndex .mainSection .seccion2 .main-parrafo .foot .foot2 span span, .foot .foot2 .mainIndex .mainSection .seccion2 .main-parrafo span span, .mainIndex .mainSection .seccion2 .main-parrafo .par span {
   color: #fe3051;
 }
 .mainIndex .mainSection .seccion2 .main-parrafo .par {
-  color: white;
   text-align: justify;
 }
 .mainIndex .mainSection .seccion2 .main-parrafo .par b {
   color: #fe3051;
 }
-.mainIndex .mainSection .seccion2 .tipos-estambre h3 {
+.mainIndex .mainSection .seccion2 .botones, .mainIndex .mainSection .mainSection .seccion2 .botones {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.mainIndex .mainSection .seccion2 .tipos-estambre h3, .mainIndex .mainSection .mainSection .seccion2 .tipos-estambre h3 {
   color: white;
 }
 .mainIndex .mainSection .seccion2 .tipos-estambre .tipo1 {
@@ -237,33 +243,6 @@
   color: white;
 }
 
-.foot {
-  background-color: black;
-  color: white;
-}
-.foot .foot1 {
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (min-width: 750px) {
-  .foot .foot1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.foot .foot1 h2 {
-  color: #fe3051;
-}
-.foot .foot2 {
-  text-align: center;
-}
-.foot .foot2 span {
-  color: #fe3051;
-}
-
 .mainNosotros {
   background-color: black;
   padding: 50px;
@@ -273,7 +252,7 @@
   margin: auto;
   width: 90%;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
   .mainNosotros .nosotros-section {
     width: 70%;
   }
@@ -288,31 +267,34 @@
 
 .mainContactos {
   background-color: black;
-  padding: 40px;
+  padding-bottom: 70px;
 }
 .mainContactos .container {
   margin: auto;
   width: 90%;
   display: grid;
+  grid-template-columns: none;
   grid-template-rows: repeat(2, 50%);
-  padding: 20px;
+  grid-template-areas: none;
+  padding: 20px 0;
   gap: 20px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
   .mainContactos .container {
-    width: 95%;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    gap: 20px;
   }
 }
 .mainContactos .container .box-info {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
   gap: 20px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
   .mainContactos .container .box-info {
     gap: 5px;
   }
@@ -321,35 +303,39 @@
   text-align: left;
   letter-spacing: 5px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
   .mainContactos .container .box-info h1 {
-    font-size: 1.5rem;
+    font-size: 30px;
     padding-bottom: 10px;
   }
 }
 .mainContactos .container .box-info .data {
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
   gap: 25px;
 }
 .mainContactos .container .box-info .data p {
   font-size: 1rem;
 }
+@media screen and (min-width: 700px) {
+  .mainContactos .container .box-info .data p {
+    font-size: 20px;
+  }
+}
 .mainContactos .container .box-info .data p i {
-  color: #FE3051;
+  color: #fe3051;
   margin-right: 10px;
   font-size: 25px;
-}
-@media screen and (min-width: 750px) {
-  .mainContactos .container .box-info .data p i {
-    font-size: 15px;
-  }
 }
 .mainContactos .container .form {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: none;
+  align-items: none;
   gap: 15px;
+  text-align: center;
 }
 .mainContactos .container .form .input-box {
   position: relative;
@@ -372,6 +358,12 @@
   transition: 0.3s;
   color: white;
 }
+@media screen and (min-width: 700px) {
+  .mainContactos .container .form .input-box > input {
+    height: 80px;
+    font-size: 20px;
+  }
+}
 .mainContactos .container .form .input-box > input:focus {
   border-bottom: 3px solid #fe3051;
 }
@@ -389,6 +381,12 @@
   color: white;
   padding: 10px;
 }
+@media screen and (min-width: 700px) {
+  .mainContactos .container .form .input-box > textarea {
+    height: 190px;
+    font-size: 20px;
+  }
+}
 .mainContactos .container .form .input-box > textarea:focus {
   border-bottom: 3px solid #fe3051;
 }
@@ -397,7 +395,7 @@
   font-weight: bold;
 }
 .mainContactos .container .form button {
-  background: #FE3051;
+  background: #fe3051;
   color: white;
   border: none;
   outline: none;
@@ -407,6 +405,196 @@
 }
 .mainContactos .container .form button:hover {
   background: rgba(254, 48, 82, 0.5607843137);
+}
+
+.contenedorTienda {
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+}
+.contenedorTienda .Encabezado h1 {
+  color: #fe3051;
+}
+.contenedorTienda .Encabezado p {
+  color: white;
+  text-align: justify;
+}
+.contenedorTienda .containerCards {
+  width: 80%;
+  margin: auto;
+  padding: 21px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (min-width: 700px) {
+  .contenedorTienda .containerCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+}
+.contenedorTienda .containerCards .card, .contenedorTienda .containerCards .card8, .contenedorTienda .containerCards .card7, .contenedorTienda .containerCards .card6, .contenedorTienda .containerCards .card5, .contenedorTienda .containerCards .card4, .contenedorTienda .containerCards .card3, .contenedorTienda .containerCards .card2, .contenedorTienda .containerCards .card1 {
+  width: 200px;
+  height: 350px;
+  background: rgba(159, 13, 127, 0.337254902);
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+  transition: all 0.5s ease;
+}
+@media screen and (min-width: 700px) {
+  .contenedorTienda .containerCards .card, .contenedorTienda .containerCards .card8, .contenedorTienda .containerCards .card7, .contenedorTienda .containerCards .card6, .contenedorTienda .containerCards .card5, .contenedorTienda .containerCards .card4, .contenedorTienda .containerCards .card3, .contenedorTienda .containerCards .card2, .contenedorTienda .containerCards .card1 {
+    width: 250px;
+  }
+}
+.contenedorTienda .containerCards .card::before, .contenedorTienda .containerCards .card8::before, .contenedorTienda .containerCards .card7::before, .contenedorTienda .containerCards .card6::before, .contenedorTienda .containerCards .card5::before, .contenedorTienda .containerCards .card4::before, .contenedorTienda .containerCards .card3::before, .contenedorTienda .containerCards .card2::before, .contenedorTienda .containerCards .card1::before {
+  content: "$39";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 35%;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #EA1179;
+  color: black;
+  font-size: 20px;
+  font-weight: 1000px;
+  transition: all 0.5s ease;
+}
+.contenedorTienda .containerCards .card:hover, .contenedorTienda .containerCards .card8:hover, .contenedorTienda .containerCards .card7:hover, .contenedorTienda .containerCards .card6:hover, .contenedorTienda .containerCards .card5:hover, .contenedorTienda .containerCards .card4:hover, .contenedorTienda .containerCards .card3:hover, .contenedorTienda .containerCards .card2:hover, .contenedorTienda .containerCards .card1:hover {
+  border-top-left-radius: 35px;
+  box-shadow: 5px 5px 0px 0px #06d6a0, 10px 10px 0px 0px #9F0D7F, 15px 15px 0px 0px #241468, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.contenedorTienda .containerCards .card:hover::before, .contenedorTienda .containerCards .card8:hover::before, .contenedorTienda .containerCards .card7:hover::before, .contenedorTienda .containerCards .card6:hover::before, .contenedorTienda .containerCards .card5:hover::before, .contenedorTienda .containerCards .card4:hover::before, .contenedorTienda .containerCards .card3:hover::before, .contenedorTienda .containerCards .card2:hover::before, .contenedorTienda .containerCards .card1:hover::before {
+  transform: scale(1.3) rotate(-30deg);
+}
+.contenedorTienda .containerCards .card:hover .card__image, .contenedorTienda .containerCards .card8:hover .card__image, .contenedorTienda .containerCards .card7:hover .card__image, .contenedorTienda .containerCards .card6:hover .card__image, .contenedorTienda .containerCards .card5:hover .card__image, .contenedorTienda .containerCards .card4:hover .card__image, .contenedorTienda .containerCards .card3:hover .card__image, .contenedorTienda .containerCards .card2:hover .card__image, .contenedorTienda .containerCards .card1:hover .card__image {
+  border-top-left-radius: 25px;
+}
+.contenedorTienda .containerCards .card .card__image, .contenedorTienda .containerCards .card8 .card__image, .contenedorTienda .containerCards .card7 .card__image, .contenedorTienda .containerCards .card6 .card__image, .contenedorTienda .containerCards .card5 .card__image, .contenedorTienda .containerCards .card4 .card__image, .contenedorTienda .containerCards .card3 .card__image, .contenedorTienda .containerCards .card2 .card__image, .contenedorTienda .containerCards .card1 .card__image {
+  width: initial;
+  height: 150px;
+  background: rgb(6, 214, 160);
+  background: linear-gradient(163deg, #06d6a0 18%, rgb(17, 138, 178) 79%);
+  transition: all 0.5s ease;
+}
+.contenedorTienda .containerCards .card .card__image img, .contenedorTienda .containerCards .card8 .card__image img, .contenedorTienda .containerCards .card7 .card__image img, .contenedorTienda .containerCards .card6 .card__image img, .contenedorTienda .containerCards .card5 .card__image img, .contenedorTienda .containerCards .card4 .card__image img, .contenedorTienda .containerCards .card3 .card__image img, .contenedorTienda .containerCards .card2 .card__image img, .contenedorTienda .containerCards .card1 .card__image img {
+  width: 100%;
+  height: 100%;
+}
+.contenedorTienda .containerCards .card .card__content, .contenedorTienda .containerCards .card8 .card__content, .contenedorTienda .containerCards .card7 .card__content, .contenedorTienda .containerCards .card6 .card__content, .contenedorTienda .containerCards .card5 .card__content, .contenedorTienda .containerCards .card4 .card__content, .contenedorTienda .containerCards .card3 .card__content, .contenedorTienda .containerCards .card2 .card__content, .contenedorTienda .containerCards .card1 .card__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 10px;
+}
+.contenedorTienda .containerCards .card .card__content .title, .contenedorTienda .containerCards .card8 .card__content .title, .contenedorTienda .containerCards .card7 .card__content .title, .contenedorTienda .containerCards .card6 .card__content .title, .contenedorTienda .containerCards .card5 .card__content .title, .contenedorTienda .containerCards .card4 .card__content .title, .contenedorTienda .containerCards .card3 .card__content .title, .contenedorTienda .containerCards .card2 .card__content .title, .contenedorTienda .containerCards .card1 .card__content .title {
+  font-weight: 800;
+  font-size: 1.4em;
+}
+.contenedorTienda .containerCards .card1::before {
+  content: "$99";
+}
+.contenedorTienda .containerCards .card2::before {
+  content: "$34";
+}
+.contenedorTienda .containerCards .card3::before {
+  content: "$75";
+}
+.contenedorTienda .containerCards .card4::before {
+  content: "$68";
+}
+.contenedorTienda .containerCards .card5::before {
+  content: "$66";
+}
+.contenedorTienda .containerCards .card6::before {
+  content: "$34";
+}
+.contenedorTienda .containerCards .card7::before {
+  content: "$97";
+}
+.contenedorTienda .containerCards .card8::before {
+  content: "$85";
+}
+
+.contenedorGaleria .Encabezado {
+  margin: auto;
+  width: 80%;
+  padding: 20px 0;
+}
+.contenedorGaleria .Encabezado h1 {
+  color: #fe3051;
+}
+.contenedorGaleria .Encabezado p {
+  color: white;
+  text-align: justify;
+}
+.contenedorGaleria .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+.contenedorGaleria .grid-container .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contenedorGaleria .grid-container .grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+@media screen and (min-width: 700px) {
+  .contenedorGaleria .grid-container .wide {
+    grid-column: span 2;
+  }
+  .contenedorGaleria .grid-container .tall {
+    grid-row: span 2;
+  }
+}
+
+.foot {
+  background-color: black;
+  color: white;
+}
+.foot .foot1 {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .foot .foot1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.foot .foot1 h2, .foot .foot1 .foot2 span, .foot .foot2 .foot1 span, .foot .foot1 .mainIndex .mainSection .seccion2 .main-parrafo .par, .mainIndex .mainSection .seccion2 .main-parrafo .foot .foot1 .par {
+  color: #fe3051;
+}
+.foot .foot2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

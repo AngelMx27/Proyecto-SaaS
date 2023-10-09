@@ -1,0 +1,141 @@
+.contenedorTienda{
+        padding: 20px;
+        margin: auto;
+        width: 80%;
+    .Encabezado{
+        
+        h1{
+            color: $text-color2;
+        }
+        p{
+            color: $text-color1;
+            text-align: justify;
+        }
+    }
+    .containerCards{
+        width: 80%;
+        margin: auto;
+        padding: 21px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        @include desktop{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+        .card{
+            width: 200px;
+            height: 350px;
+            background: #9f0d7f56;
+            color: $text-color1;
+            font-weight: 600;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            position: relative;
+            transition: all .5s ease;
+            @include desktop{
+                width: 250px;
+            }
+            &::before{
+                content: "$39";
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                top: 35%;
+                right: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: #EA1179;
+                color: black;
+                font-size: 20px;
+                font-weight: 1000px;
+                transition: all .5s ease;
+            }
+            &:hover{
+                border-top-left-radius: 35px;
+                box-shadow: 5px 5px 0px 0px #06d6a0, 10px 10px 0px 0px #9F0D7F, 15px 15px 0px 0px #241468, 5px 5px 15px 5px rgba(0,0,0,0);
+                &::before{
+                    transform: scale(1.3) rotate(-30deg);
+    
+                }
+                .card__image{
+                    border-top-left-radius: 25px;
+                }
+            }
+            .card__image{
+                width: initial;
+                height: 150px;
+                background: rgb(6,214,160);
+                background: linear-gradient(163deg, #06d6a0 18%, rgba(17,138,178,1) 79%);
+                transition: all .5s ease;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .card__content{
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-grow: 1;
+                gap: 10px;
+                .title{
+                    font-weight: 800;
+                    font-size: 1.4em;              
+                }
+            }
+        }.card1{
+            @extend .card;
+            &::before{
+                content: "$99";
+            }
+        }.card2{
+            @extend .card;
+            &::before{
+                content: "$34";
+            }
+        }.card3
+        {
+            @extend .card;
+            &::before{
+                content: "$75";
+            }
+        }
+        .card4{
+            @extend .card;
+            &::before{
+                content: "$68";
+            }
+        }.card5{
+            @extend .card;
+            &::before{
+                content: "$66";
+            }
+        }.card6{
+            @extend .card;
+            &::before{
+                content: "$34";
+            }
+        }.card7{
+            @extend .card;
+            &::before{
+                content: "$97";
+            }
+        }.card8{
+            @extend .card;
+            &::before{
+                content: "$85";
+            }
+        }
+
+    }
+
+}

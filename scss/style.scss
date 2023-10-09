@@ -1,5 +1,6 @@
 /*PRIMERO VARIABLES, MIXINS Y TODO LO QUE ESTE DENTRO DE UTILITIES*/
 @import "./utilities/variables";
+@import "./utilities/mixins";
 @import "../scss/layout/medias/mediaOne.scss";
 
 /*TODO LO QUE ESTE EN LA BASE*/
@@ -11,10 +12,11 @@
 /*TODO LO QUE ESTE EN LAYOUT*/
 @import "./layout/header";
 @import "./layout/mainIndex";
-@import "./layout/footer";
 @import "./layout/mainNosotros";
 @import "./layout/mainContactos";
-@import "./layout/mainEstambres";
+@import "./layout/mainTienda";
+@import "./layout/mainGaleria";
+@import "./layout/footer";
 
 
 

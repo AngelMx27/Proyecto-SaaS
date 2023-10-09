@@ -1,6 +1,6 @@
 .foot{
-    background-color: black;
-    color: white;
+    background-color: $bg-color;
+    color: $text-color1;
     .foot1{
         
         display: flex;
@@ -14,13 +14,13 @@
             justify-content: center;
         }
         h2{
-            color: #fe3051;
+            color: $text-color2;
         }
     }
     .foot2{
         text-align: center;
         span{
-            color: #fe3051;
+            @extend h2;
         }
     }
 }

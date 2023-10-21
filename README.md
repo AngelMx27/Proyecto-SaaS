@@ -4,7 +4,11 @@ Este proyecto comienza con un diseño en Figma maquetando la idea, colores, dist
 
 # Crochet Manzur
 
-E commerce de un emprendimiento ya consolidado el cual se dedica a la creación de ideas en base a estambre,
+E commerce de un emprendimiento ya consolidado el cual se dedica a la creación de ideas en base a estambre.
+
+# Nota
+
+El presupuesto se encuentra en la carpeta Presupuesto y dentro el pdf.
 
 ## Componentes de proyecto
 
